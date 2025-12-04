@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 [SerializeField] float tempoRestante;
 
 
-
+public bool acabou = false;
 
 
 
@@ -31,6 +31,7 @@ else
   tempoRestante = 0;
   textoTimer.color = Color.red;
   //GameOver();
+  acabou = true;
   Time.timeScale = 0f;
 }
 int minutos = Mathf.FloorToInt(tempoRestante / 60);
