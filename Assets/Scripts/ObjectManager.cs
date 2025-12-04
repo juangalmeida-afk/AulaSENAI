@@ -18,7 +18,7 @@ public class ObjectManager : MonoBehaviour
 
 
 [SerializeField] Timer meuTimer;
-
+public bool upgrade = false;
 
     // Método para clique no objeto principal
     void OnMouseDown()
