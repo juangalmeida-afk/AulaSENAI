@@ -37,7 +37,7 @@ else
   Transform filho = transform.Find(nomeDoFilho);
   filho.gameObject.SetActive(true);
   
-  Time.timeScale = 0f;
+  Time.timeScale = 1f;
 }
 int minutos = Mathf.FloorToInt(tempoRestante / 60);
 int segundos = Mathf.FloorToInt(tempoRestante % 60);
